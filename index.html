@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Billion Upliftium Plot - Fundraising Tracker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"
+        integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+<body>
+
+  
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom ">
+    <a class="navbar-brand" href="index.html"><img class="nav-img" src="img\liftium-tokenizednft.png"><span
+            id="brand-tag">Uplift Community Project</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-custom" id="collapse">
+            <a class="nav-link active" href="index.html">5 Billion<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="minerDeals.html">Miner Deals</a>
+            <a class="nav-link disabled" href="#">Minerstonksz</a>
+            <a class="nav-link disabled">Upliftium Statistics</a>
+        </div>
+    </div> 
+</nav>
+
+    <div class="main-container">
+        <div class="header">
+            <div id="main-header">5 Billion Upliftium</div>
+            <div id="sub-header">Community Fund Raising</div>
+            <div id="sub-header2">Send 10 Million Liftium or 10 Mios to "mtz3a.wam"</div>
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="price-section">
+            <div class="header">Current Liftium Price on Alcor per 1 wax</div>
+
+
+            <div class="outputLiftiumPrice" id="liftium-price"></div>
+            <div class="header" id="sub-header2"><a
+                    href="https://wax.alcor.exchange/swap?output=LIFTIUM-tokenizednft&input=WAX-eosio.token">Alcor
+                    Wax/Liftium</a></div>
+            <br>
+            <div class="header">Lowest Priced Mio on Atomic</div>
+            <div class="outputMioPrice" id="liftium-price"></div>
+            <div class="header" id="sub-header2"><a
+                    href="https://wax.atomichub.io/market?collection_name=upliftium.hi&order=asc&sort=price&symbol=WAX">Atomic
+                    Hub</a></div>
+        </div>
+        <div class="raffle">
+
+            <div class="more-info">
+                Would you like to buy land for Liftium?
+
+                You don't have to wait any longer, we will be doing a presale.
+
+                You might have seen this DAO proposal if not <a
+                    href="https://snapshot.org/#/theuplift.eth/proposal/0xa86206e8a58aa4dd46e15948c918ff98c4a8aa3a2899d1c2608bb5bd4d11fa0b">check
+                    it out!</a>
+
+                A new world will be created, once its bought for 5 Billion Liftium .
+
+                I know what you are thinking, this is a lot how are we ever going to be able to get this much?!
+
+                Well it isn't going to be easy, however me and some friends have decided if we all work together this
+                will be possible!
+
+                We are a team of 5, and we will be the "Creators" of this world.
+
+                We will each be brining a 100mill of our own Liftium . This means we already got 10% of all the Liftium
+                we need!
+
+                To purchase a land, please send 10 Million to this wallet "mtz3a.wam". You are of course allowed to
+                purchase multiple lands, however please always send 10 Million per transaction.
+
+                Please state your Minecraft name in the Memo, we will be giving out 32 Emeralds blocks and 1 beacon for
+                each land bought! ( This is almost 70 mill worth of items been giving out from just buying, Raffles will
+                hold even better items!!! )
+
+                Once we have gotten enough Liftium we will be able to create this world and send out land to everyone
+                who has purchased land.
+
+                This world will be a Survival world, there are more options we have with creating this world. However
+                these options are still to be discussed within the creator team.
+
+                If we can't reach our goal all the funds will be refunded.
+
+                About the creators, currently we are a team of 4.
+            </div>
+            <div class="header" id="discord-name">
+                @ChrisP ( Swineland ) <br>
+                @Stahlmann271 / Giant Melon owner<br>
+                @ModdedOutlaw<br>
+                @Sadisty<br>
+            </div>
+            <div class="more-info">
+                We are still discussing who will be the last creator ❤️
+
+                We are also going to be hosting some raffles for people who have pre-ordered land.
+
+                Raffles will be held if we reach a X amount of Liftium in the wallet.
+
+                First raffle will take place at 10 land buyers!! ( Check out the picture )
+
+                We will also be working on a small website to check how much is been bought and how much we need until
+                we reach the 5 Billion.
+
+            </div>
+            <div class="header" id="sub-header">Raffle Prizes</div>
+            <div class="raffle-prizes">
+                <img src="rafflePrizez.png" class="raffle-img" />
+            </div>
+
+
+            <script src="app.js"></script>
+        </div>
+</body>
+
+</html>
