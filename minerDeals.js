@@ -97,7 +97,7 @@ async function getMinerDeals() {
 
 
         let descriptionX = document.createElement('p');
-        descriptionX.innerHTML += '<h2>' + m.name + '</h2>' + m.ratio + ' upliftium per hour / price <br>' + m.rate + ' Upliftium per hour <br>' + m.price +
+        descriptionX.innerHTML += '<h3>' + m.name + '</h3>' + m.ratio + ' upliftium per hour / price <br>' + m.rate + ' Upliftium per hour <br>' + m.price +
             ' wax<br><a href ="https://wax.atomichub.io/market/sale/' + m.saleId +
             '">AtomicHub</a><br><hr>';
 
